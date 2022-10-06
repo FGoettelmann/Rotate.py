@@ -45,7 +45,7 @@ with open(outputfile, mode = "w") as OUTPUT:
         
         print("\n", SEQID.id, " has a length of ", len(SEQID.seq), ".", sep = '')
         
-        if SEQID.seq.count(SEQUENCE)+SEQID.seq.reverse_complement().count(SEQUENCE) > 1: #if start sequence is found more than once, do not rotate
+        if SEQID.seq.count_overlap(SEQUENCE)+SEQID.seq.reverse_complement().count_overlap(SEQUENCE) > 1: #if start sequence is found more than once, do not rotate
             print("Sequence was found more than 1 time on ", SEQID.id, ", it was kept untouched.", sep = '')
             
         elif location != -1: #if found on forward strand, rotate
