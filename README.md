@@ -4,6 +4,9 @@ This is a python script that rotates circular bacterial genomes so that they sta
 As a convention, bacterial genomes should be rotated so that they start with the DNA A coding sequence.
 This script allows you to specify the name of your genome file and will rotate the genome for you.
 
+# Dependencies
+This script is written in Python 3 and requires the [BioPython](https://biopython.org/wiki/Download)  package to be installed.
+
 # Usage
 
 ```
