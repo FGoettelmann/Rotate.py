@@ -43,7 +43,7 @@ with open(outputfile, mode = "w") as OUTPUT:
         location_overlap = (SEQID.seq[-len(SEQUENCE):] + SEQID.seq[:len(SEQUENCE)]).find(SEQUENCE)
         location_overlap_reverse = (SEQID.seq.reverse_complement()[-len(SEQUENCE):] + SEQID.seq.reverse_complement()[:len(SEQUENCE)]).find(SEQUENCE)
         
-        print("\n", SEQID.id, " has a length of ", len(SEQID.seq), ".", sep = '')
+        print("\n", SEQID.id, " has a length of ", f"{len(SEQID.seq):,}", ".", sep = '')
         
         if SEQID.seq.count_overlap(SEQUENCE)+SEQID.seq.reverse_complement().count_overlap(SEQUENCE) > 1: #if start sequence is found more than once, do not rotate
             print("Sequence was found more than 1 time on ", SEQID.id, ", it was kept untouched.", sep = '')
