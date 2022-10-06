@@ -16,4 +16,4 @@ python Rotate.py -i <input> -o <output> -s <start sequence>
 
 The input file name is required.
 If you do not specify an output name, a file called <your input file name>_rotated.fasta will be created by default.
-By default, the sequence used is a 27 bp sequence of the dna A CDS from *Xanthomonas translucens*. If you want to use a different sequence, you can specify it with the -s option.
+By default, the sequence used is a 27 bp sequence of the *dnaA* CDS from *Xanthomonas translucens*. If you want to use a different sequence, you can specify it with the -s option.
