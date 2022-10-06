@@ -1,7 +1,7 @@
 # Rotate.py
 This is a python script that rotates circular bacterial genomes so that they start at a desired locus.
 
-As a convention, bacterial genomes should be rotated so that they start with the DNA A coding sequence.
+As a convention, bacterial genomes should be rotated so that they start with the *dnaA* coding sequence.
 This script allows you to specify the name of your genome file and will rotate the genome for you.
 Make sure that your genome sequence is indeed circular after assembly, otherwise it will not make sense to rotate it. If your file contains multiple sequences, the script will tell you which sequences were rotated, so you can check that these sequences are circular.
 
