@@ -7,7 +7,7 @@ This script allows you to specify the name of your genome file and will rotate t
 # Usage
 
 ```
-python Rotate.py -i <inputfile> -o <outputfile> -s <start sequence>
+python Rotate.py -i <input> -o <output> -s <start sequence>
 ```
 
 The input file name is required.
